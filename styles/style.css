@@ -123,6 +123,7 @@ nav {
 /* top blogs */
 .blog {
   display: flex;
+  border: 2px solid green;
 }
 .blog .thumnail img {
   width: 177px;
@@ -154,12 +155,13 @@ nav {
 .courses {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 23.5px;
+  /* grid-column-gap: 23.5px; */
 }
 .course {
   padding: 15px;
   width: 252.42px;
   height: 269.79px;
+  border: 2px solid green;
 }
 .course-banner img {
   width: 224px;
@@ -215,10 +217,11 @@ nav {
   }
 
   .nav-container {
-    width: 90%;
+    width: 100%;
   }
   .container {
-    width: 90%;
+    padding-left: 0%;
+    width: 100%;
   }
   .players,
   .blogs,
@@ -247,18 +250,20 @@ nav {
   }
   .course {
     display: flex;
-    width: 100%;
+    width: 94%;
     padding-left: 0px;
+    margin-bottom: 20px;
   }
 }
 
 /* tablate devices */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
   .nav-container {
-    width: 90%;
+    width: 100%;
   }
   .container {
-    width: 90%;
+    width: 100%;
+    padding-left: 0px;
   }
   .section-title {
     text-align: center;
@@ -277,6 +282,7 @@ nav {
   .blog {
     flex-direction: column;
     align-items: center;
+    width: 99%;
   }
   .blog-info {
     margin-left: 0px;
@@ -291,7 +297,8 @@ nav {
   }
   .course {
     display: flex;
-    width: 100%;
+    width: 94%;
+
     padding-left: 0px;
     flex-direction: column;
     align-items: center;
