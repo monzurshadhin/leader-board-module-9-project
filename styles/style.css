@@ -52,9 +52,9 @@ hr {
   align-items: center;
 }
 .logo h3 {
-  padding-left: 36px;
+  padding-left: 10px;
   color: white;
-  font-size: 24px;
+  font-size: 26px;
 }
 .nav-link {
   display: flex;
@@ -123,7 +123,7 @@ nav {
 /* top blogs */
 .blog {
   display: flex;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 .blog .thumnail img {
   width: 177px;
@@ -161,7 +161,7 @@ nav {
   padding: 15px;
   width: 252.42px;
   height: 269.79px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 .course-banner img {
   width: 224px;
