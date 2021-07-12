@@ -47,6 +47,16 @@ hr {
   margin-bottom: 30px;
 }
 /* nav section */
+#check {
+  display: none;
+}
+.check-btn {
+  color: white;
+  padding-top: 30px;
+  font-size: 25px;
+  display: none;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -86,7 +96,7 @@ nav {
 .link ul li a {
   color: white;
   text-decoration: none;
-  padding: 16px;
+  padding: 5px 16px;
 }
 .main-nav .logo img {
   height: 50px;
@@ -207,15 +217,76 @@ nav {
 /* mobile device */
 
 @media only screen and (max-width: 688px) {
+  /* @keyframes left-slide {
+    from {
+      flex-direction: column-reverse;
+      position: absolute;
+      top: 85px;
+      left: -100%;
+
+      width: 100%;
+      background-color: aqua;
+    }
+    to {
+      flex-direction: column-reverse;
+      position: absolute;
+      top: 85px;
+      left: 0;
+
+      width: 100%;
+      background-color: aqua;
+      left: 0px;
+    }
+  } */
+  main {
+    margin-top: 250px;
+  }
   .logo h3 {
     padding-left: 10px;
     color: white;
     font-size: 24px;
   }
-  .link {
+  /* .link {
     display: none;
+  } */
+  .check-btn {
+    display: block;
   }
+  .nav-link {
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 83px;
+    left: 0;
 
+    width: 100%;
+    background-color: aqua;
+  }
+  /* #check:checked + .nav-link {
+    left: 0;
+  } */
+  /* .fa-bars:hover .nav-link {
+    animation: left-slide 1s ease-in-out 1;
+  } */
+
+  .link ul li a {
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .link ul li a:hover {
+    background-color: red;
+  }
+  .link ul li {
+    display: block;
+  }
+  .link ul {
+    padding-left: 0px;
+  }
+  .nav-link .user {
+    padding-left: 0px;
+  }
   .nav-container {
     width: 100%;
   }
