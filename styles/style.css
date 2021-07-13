@@ -86,6 +86,8 @@ nav {
   background-color: #562eff;
   display: flex;
   justify-content: center;
+  position: fixed;
+  width: 100%;
 }
 .link ul {
   list-style: none;
@@ -104,6 +106,9 @@ nav {
 }
 
 /* top players */
+.top-section {
+  margin-top: 100px;
+}
 .top-palyers {
   margin-bottom: 30px;
 }
