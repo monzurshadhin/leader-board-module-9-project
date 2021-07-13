@@ -225,6 +225,10 @@ nav {
 
   .check-btn {
     display: block;
+    transition: transform 0.5s;
+  }
+  .check-btn:hover {
+    color: rgb(8, 6, 95);
   }
   .nav-link {
     flex-direction: column-reverse;
@@ -236,6 +240,18 @@ nav {
     transition: all 0.5s ease-in-out;
     background-color: rgb(51, 112, 243);
   }
+  .cross-btn {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    padding-top: 0px;
+    transition: transform 0.5s;
+  }
+  .cross-btn:hover {
+    transform: scale(1.5) rotate(360deg);
+  }
+
   #check:checked ~ .nav-link {
     left: 0;
   }
