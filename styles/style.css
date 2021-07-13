@@ -217,38 +217,12 @@ nav {
 /* mobile device */
 
 @media only screen and (max-width: 688px) {
-  /* @keyframes left-slide {
-    from {
-      flex-direction: column-reverse;
-      position: absolute;
-      top: 85px;
-      left: -100%;
-
-      width: 100%;
-      background-color: aqua;
-    }
-    to {
-      flex-direction: column-reverse;
-      position: absolute;
-      top: 85px;
-      left: 0;
-
-      width: 100%;
-      background-color: aqua;
-      left: 0px;
-    }
-  } */
-  main {
-    margin-top: 250px;
-  }
   .logo h3 {
     padding-left: 10px;
     color: white;
     font-size: 24px;
   }
-  /* .link {
-    display: none;
-  } */
+
   .check-btn {
     display: block;
   }
@@ -256,17 +230,15 @@ nav {
     flex-direction: column-reverse;
     position: absolute;
     top: 83px;
-    left: 0;
+    left: -100%;
 
     width: 100%;
-    background-color: aqua;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(51, 112, 243);
   }
-  /* #check:checked + .nav-link {
+  #check:checked ~ .nav-link {
     left: 0;
-  } */
-  /* .fa-bars:hover .nav-link {
-    animation: left-slide 1s ease-in-out 1;
-  } */
+  }
 
   .link ul li a {
     font-size: 20px;
